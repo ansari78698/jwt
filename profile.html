@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <link rel="stylesheet" href="assets/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body oncopy="return false" oncut="return false" onpaste="return false" oncontextmenu='return false' >
+    <div class="main">
+        <section class="sign-in">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-form">
+                        <h2 class="form-title">Welcome : <span id="firstname" ></span> <span id="lastname" ></span> </h2>
+                        <input type="hidden" id="id" name="id">
+                        <div class="form-group">
+                            <label for="fname"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="fname" id="fname" placeholder="First Name" autocomplete="off" />
+                        </div>
+                        <div class="form-group">
+                            <label for="lname"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="lname" id="lname" placeholder="Last Name" autocomplete="off" />
+                        </div>
+                        <div class="form-group">
+                            <label for="dob"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="date" name="dob" id="dob" placeholder="Date of birth" autocomplete="off" />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"><i class="zmdi zmdi-phone material-icons-name"></i></label>
+                            <input type="text" name="phone" id="phone" placeholder="Phone Number" autocomplete="off" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password"><i class="zmdi zmdi-lock material-icons-name"></i></label>
+                            <input type="text" name="password" id="password" placeholder="New Password" autocomplete="off" />
+                        </div>
+                        <span id="successmsg" style="color: green;text-align: center;" ></span>
+                        <div class="form-group form-button">
+                            <input type="submit" onclick="update()" class="form-submit" value="Save Changes"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
